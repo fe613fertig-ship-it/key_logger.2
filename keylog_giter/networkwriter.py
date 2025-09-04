@@ -1,8 +1,3 @@
-# import socket
-# import json
-#
-# class NetworkWriter(IWriter):
-#
 from abc import ABC, abstractmethod
 import socket
 import json
@@ -43,7 +38,7 @@ def log_event(writer: IWriter, event: str):
         print("Server response:", response)
 
 
-# דוגמה לשימוש
+
 if __name__ == "__main__":
     nw = NetworkWriter("127.0.0.1", 5000)  # צריך שרת מאזין
     log_event(nw, "User login from client")
